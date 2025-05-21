@@ -4,6 +4,12 @@ This project provides an end-to-end analysis of pizza sales data, inspired by th
 
 > **Note**: The dataset used is fictional or generic, branding it as “Dominos” helps simulate a real-world business case for portfolio and presentation purposes.
 
+## 📁 File Structure
+
+- `SQL_Queries/pizza_sales_analysis.postgresql` – Contains all the PostgreSQL queries used for sales analysis.
+- `Dominos Dashboard Page 1 & 2` – Power BI file that visualizes sales metrics and trends.
+- `Business_Analysis/pizza_sales_business_analysis.docx` – A 2-page document analyzing business problems and proposed solutions.
+
 ---
 
 ## 📌 Project Highlights
@@ -47,24 +53,6 @@ This project provides an end-to-end analysis of pizza sales data, inspired by th
   - Total Orders
 
 ---
-
-## 📂 File Structure
-Dominos-Pizza-Sales-Report/
-│
-├── 📁 SQL_Queries/
-│   └── pizza_sales_analysis.sql               # All SQL queries used for analysis
-│
-├── 📁 PowerBI_Dashboard/
-│   └── pizza_sales_dashboard.pbix             # Power BI report file
-│   └── dashboard_screenshots/                 # Screenshots for README or Word doc
-│       └── overview.png
-│       └── sales_trends.png
-│
-├── 📁 Business_Analysis/
-│   └── pizza_sales_business_analysis.docx     # 2-page business analysis (solution-focused)
-│   └── charts/                                # (Optional) Any exported visuals from Power BI
-│       └── category_sales_chart.png
-│       └── top_pizzas_chart.png
 
 ## 📊 Power BI Dashboard Preview
 
