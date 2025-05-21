@@ -70,12 +70,12 @@ Dominos-Pizza-Sales-Report/
 
 ### 🟢 Page 1: Sales Overview
 
-![Dashboard Page 1](./PowerBI_Dashboard/dashboard_screenshots/dashboard_page1.png)
+![Dashboard Page 1](https://github.com/Yashraaj2002/Dominos-Sales-Business-Analysis/blob/main/Dominos%20Dashboard%20Page%201.png)
 
 ---
 
 ### 🔵 Page 2: Best & Worst Sellers
 
-![Dashboard Page 2](./PowerBI_Dashboard/dashboard_screenshots/dashboard_page2.png)
+![Dashboard Page 2](https://github.com/Yashraaj2002/Dominos-Sales-Business-Analysis/blob/main/Dominos%20Dashboard%20Page%202.png)
 
 
