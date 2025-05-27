@@ -1,69 +1,68 @@
-### 🍕 Dominos Pizza Sales Report
+# Domino’s Pizza Sales & Performance Dashboard 🍕📊
 
-This project provides an end-to-end analysis of pizza sales data, inspired by the business model of Domino's Pizza. It includes data exploration using SQL, a fully interactive Power BI dashboard, and an upcoming business analysis document that identifies key problems and proposes data-driven solutions.
+## Project Goal 🎯  
+Address key business questions:
 
-> **Note**: The dataset used is fictional or generic, branding it as “Dominos” helps simulate a real-world business case for portfolio and presentation purposes.
+- What are the peak sales periods and daily order trends?
+- Which pizza categories, sizes, and individual products perform best or worst?
+- How can we use average order value and order frequency to improve promotions?
+- What insights can guide product mix, pricing, and operations decisions?
 
-## 📁 File Structure
-
-- `SQL_Queries/pizza_sales_analysis.postgresql` – Contains all the PostgreSQL queries used for sales analysis.
-- `Dominos Dashboard Page 1 & 2` – Power BI file that visualizes sales metrics and trends.
-- `Business_Analysis/pizza_sales_business_analysis.docx` – A 2-page document analyzing business problems and proposed solutions.
-
----
-
-## 📌 Project Highlights
-
-- 🔍 **SQL Analysis**: Core metrics such as total revenue, order trends, and product performance.
-- 📊 **Power BI Dashboard**: Interactive visuals of sales trends, pizza category performance, and top/bottom sellers.
-- 📄 **Business Analysis Report**: A Word document analyzing key problems and strategic recommendations.
+Analyze Domino’s pizza sales data to extract actionable insights that help improve marketing strategies, inventory planning, and customer satisfaction.
 
 ---
 
-## 🛠️ Tools & Technologies
+## Data Preparation Process ⚙️
 
-- **SQL Server / PostgreSQL** – Data Analysis and Transformation
-- **Power BI** – Interactive Dashboard Creation
-- **MS Word** – Business Analysis
+1. **Data Cleaning & Normalization:**  
+   Used Excel Power Query to clean column headers, unify date formats, and standardize product and category names for accurate grouping.
+
+2. **ETL & Storage:**  
+   Imported the cleaned dataset into PostgreSQL with proper data types (dates, text, numerics) and normalized key fields for queries.
+
+3. **Data Aggregation & Manipulation:**  
+   Applied SQL techniques such as `GROUP BY`, `SUM`, `COUNT DISTINCT`, and CTEs to generate core KPIs and breakdowns by category, size, and product.
+
+4. **Business Logic Implementation:**  
+   Built logic to calculate AOV, pizzas per order, top/bottom performers by revenue, and seasonal trends across multiple dimensions.
+
+5. **Visualization Setup:**  
+   Created a 2-page interactive Power BI dashboard with KPI cards, dynamic filters, category comparisons, and trend visualizations.
+
 
 ---
 
-## 📈 Key SQL Insights
+## Tools & Technologies 🛠️
 
-| Metric | Description |
-|--------|-------------|
-| 💵 **Total Revenue** | `SUM(total_price)` |
-| 📦 **Average Order Value** | `SUM(total_price) / COUNT(DISTINCT order_id)` |
-| 🍕 **Total Pizzas Sold** | `SUM(quantity)` |
-| 📋 **Total Orders** | `COUNT(DISTINCT order_id)` |
-| 🧮 **Average Pizzas Per Order** | `SUM(quantity) / COUNT(DISTINCT order_id)` |
-
-### 🗓️ Trend Analysis
-
-- **Daily Orders Trend**
-- **Monthly Orders Trend**
-
-### 🔍 Category-Level Insights
-
-- % Sales by Pizza Category & Size
-- Total Quantity Sold by Category (e.g., February)
-- Top/Bottom Performing Pizzas by:
-  - Revenue
-  - Quantity Sold
-  - Total Orders
+- **PostgreSQL:** Data aggregation, KPI logic, product ranking, time-series analysis  
+- **Excel Power Query:** Raw data cleaning and structuring  
+- **Power BI:** Dashboard development with DAX, dynamic visuals, and filters
 
 ---
 
-## 📊 Power BI Dashboard Preview
+## Project Structure 📁
 
-### 🟢 Page 1: Sales Overview
-
-![Dashboard Page 1](https://github.com/Yashraaj2002/Dominos-Sales-Business-Analysis/blob/main/Dominos%20Dashboard%20Page%201.png)
+- `Dominos_Dashboard.pbix` — Power BI file with two dashboard pages: KPI Overview and Product Performance.
+- `sql/dominos_pizza_sales_analysis.sql` — Consolidated SQL queries for revenue, order trends, top/bottom sellers, and category-level insights.
 
 ---
 
-### 🔵 Page 2: Best & Worst Sellers
+## Key Insights & Business Impact 💡
 
-![Dashboard Page 2](https://github.com/Yashraaj2002/Dominos-Sales-Business-Analysis/blob/main/Dominos%20Dashboard%20Page%202.png)
+- Average order value and quantity per order calculated to support bundled offers and upsell strategies.
+- Daily and monthly trends help schedule promotions and staff during peak ordering hours.
+- Category-level insights highlight high-performing segments and underperforming items needing marketing or removal.
+- Product performance tracking identifies best and worst sellers by revenue, quantity, and popularity, guiding menu decisions.
+- Visual KPIs and drilldowns support quick answers to operational and marketing questions.
 
+---
 
+## 📊 Dashboard 1: Sales KPIs & Trend Overview  
+![Dashboard Page 1](https://github.com/Yashraaj2002/Dominos-Sales-Business-Analysis/blob/main/Dominos%20Dashboard%20Page%201.png)  
+💡 Shows core KPIs (Total Revenue, AOV, Total Orders, Quantity Sold), with daily/monthly trend charts and category breakdowns.
+
+---
+
+## 📋 Dashboard 2: Best & Worst Performing Products  
+![Dashboard Page 2](https://github.com/Yashraaj2002/Dominos-Sales-Business-Analysis/blob/main/Dominos%20Dashboard%20Page%202.png)  
+💡 Highlights top-selling and lowest-performing pizzas by revenue, orders, and units sold — supporting smarter menu and marketing strategies.
