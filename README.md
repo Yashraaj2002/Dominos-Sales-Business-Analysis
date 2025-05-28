@@ -44,6 +44,7 @@ Analyze Domino’s pizza sales data to extract actionable insights that help imp
 
 - `Dominos_Dashboard.pbix` — Power BI file with two dashboard pages: KPI Overview and Product Performance.
 - `sql/dominos_pizza_sales_analysis.sql` — Consolidated SQL queries for revenue, order trends, top/bottom sellers, and category-level insights.
+- `Dominos Business Case.pdf` — Business analyst-style case study identifying the problem, approach, and solution recommendations  
 
 ---
 
