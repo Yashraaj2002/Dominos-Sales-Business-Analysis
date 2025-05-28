@@ -59,11 +59,11 @@ Analyze Domino’s pizza sales data to extract actionable insights that help imp
 ---
 
 ## 📊 Dashboard 1: Sales KPIs & Trend Overview  
-![Dashboard Page 1](https://github.com/Yashraaj2002/Dominos-Sales-Business-Analysis/blob/main/Dominos%20Dashboard%20Page%201.png)  
+![Dashboard Page 1](https://github.com/Yashraaj2002/Dominos-Sales-Data-and-Business-Analysis/blob/main/Dominos%20Dashboard%201.png)  
 💡 Shows core KPIs (Total Revenue, AOV, Total Orders, Quantity Sold), with daily/monthly trend charts and category breakdowns.
 
 ---
 
 ## 📋 Dashboard 2: Best & Worst Performing Products  
-![Dashboard Page 2](https://github.com/Yashraaj2002/Dominos-Sales-Business-Analysis/blob/main/Dominos%20Dashboard%20Page%202.png)  
+![Dashboard Page 2](https://github.com/Yashraaj2002/Dominos-Sales-Data-and-Business-Analysis/blob/main/Dominos%20Dashboard%202.png)  
 💡 Highlights top-selling and lowest-performing pizzas by revenue, orders, and units sold — supporting smarter menu and marketing strategies.
